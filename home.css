@@ -1,0 +1,59 @@
+#page {
+    margin: 2em 1em 1em 2em
+}
+
+
+header {
+   position: top;
+   border: solid black;
+   width: auto;
+   margin: 0.1em;
+   padding: 0.7em
+
+}
+nav {
+
+    border: dotted black;
+ }
+
+#content {
+    float: left;
+    height: 64em;
+    width: 40em;
+    border: solid black;
+    margin: 0.5em;
+    padding: 0.7em
+}
+
+article {
+    border: dotted black;
+    padding: 0.7em;
+    margin: 0.5em;
+}
+
+h1 {
+    position: center
+}
+
+aside {
+    float:left;
+    width: 40em;
+    height: 64em;
+    border: solid black;
+    padding: 0.7em;
+    margin: 0.5em;
+}
+
+
+ footer {
+   
+    content: "";
+    display: table;
+    clear: both;
+    width: 90em;
+    position: bottom;
+    border: black;
+    border-style: solid;
+    padding: 0.7em;
+    margin: 0.5em;
+}

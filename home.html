@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="sv-se">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Tova Erbén">
+    <meta name="description" content="Huvudsidan som innehåller sammanfattad information om en själv och härifrån ska man kunna nå de andra sidor på webbplatsen">
+    <meta name="generator" content="Visual Studio Code">
+    <meta name="keywords" content="HTML, CSS, XML, JavaScript, PHP, webbutveckling">
+    <meta name="robots" content="noimageindex">
+    <link rel="stylesheet" href="home.css">
+    <title>Home</title>
+</head>
+<body>
+    <div id="page">
+        <header>
+            <h1>Hem</h1>
+            <nav>
+                <a href="index.html">Index</a> <br>
+                <a href="history.html">Tidigare</a> <br>
+                <a href="now.html">Dagsläget</a> <br>
+                <a href="future.html">Framtiden</a> <br>
+                <br>
+            </nav>
+        </header>
+    </div>
+
+    <div id="content">
+        <article>
+            <h2>Kort om mig</h2>
+                <div>Jag heter Tova och är en tidigare språkstudent som just nu går sista terminen på ekonomi och IT-programemt vid Stockholms universitet. 
+                    När jag inte pluggar jobbar jag deltid som ekonomiassistent och engagerar mig i djurrätt.</div>
+                <figure>
+                    <img alt="Bild på mig" src="hembild.jpg" width="230" height="300">
+                        <figcaption>Bild: privat.</figcaption>
+                </figure>
+        </article>
+        <article>
+            <h2>Hitta runt</h2>
+            <div>I länklistan högst upp finns länkar till andra delar av sidan.</div>
+            <figure>
+                    <img alt="Progressiv jpg-bild" src="tree.jpg" width="400" height="320">
+                        <figcaption>Progressiv JPG-bild (privat).</figcaption>
+                </figure>
+        </article>
+    </div>
+
+    <aside>
+        <h2>Hör av dig!</h2>
+        <form enctype="multipart/form-data" action=https://people.dsv.su.se/~pierre/i/05_ass/ip3/1/1.10/example.php method="get">
+            <fieldset>
+                <legend>Kontaktuppgifter</legend>
+                Namn:<br>
+                <input type="text" name="name" placeholder="Förnamn Efternamn" autofocus required>
+                <br><br>
+                Epost-adress:<br>
+                <input type="email" name="epost" placeholder="abc@student.su.se" pattern=^.*\b(su.se)\b.*$ title="Epost med domänet su.se" required>
+                <br><br>
+                Hemsida:<br>
+                <input type="url" name="hemsida" placeholder="www.minhemsida.se">
+                <br><br>
+                Meddelande:<br>
+                <textarea rows="4" cols="50" placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit."></textarea>
+                <br><br>
+                Vad avser meddelandet?<br>
+                <input type="checkbox" name="feedback">Feedback.<br>
+                <input type="checkbox" name="hälsning"> Hälsning.<br><br>
+                Känner vi varandra?<br>
+                <label for="1">Ja</label>
+                <input type="radio" name="ja/nej" id="1" value="ja"><br>
+                <label for="0">Nej</label>
+                <input type="radio" name="ja/nej" id="0" value="nej"><br><br>
+                Om feedback, vad avser kommentaren?
+                <select>
+                    <optgroup label="Webbutveckling">
+                        <option value="html">Html-kod</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">Javascript</option>
+                        <option value="php">PHP</option>
+                    </optgroup>
+                    <optgroup label="Innehållet">
+                        <option value="stavning">Stavning</option>
+                        <option value="copyright">Copyright</option>
+                    </optgroup> 
+                    </select>
+                    <br><br> 
+                Bifoga en fil: <input type="file" name="file"><br><br>
+                 Slutligen, vilken är din favoritplanet?
+                <input list="planeter" name="planet">
+                <datalist id="planeter">
+                    <option>Merkurius</option>
+                    <option>Venus</option>
+                    <option>Jorden</option>
+                    <option>Mars</option>
+                    <option>Jupiter</option>
+                    <option>Saturnus</option>
+                    <option>Uranus</option>
+                    <option>Neptunus</option>
+                </datalist> <br><br>
+                <input type="submit" value="Skicka in">
+            </fieldset>
+        </form>
+    </aside>
+
+    <footer>
+        <details>
+            <summary>
+                Kontaktuppgifter:
+            </summary>
+            <p>Epost: <a href="mailto:tova.erben@gmail.com">tova.erben@gmail.com</a></p>
+        </details>
+        
+    </footer>
+</body>
+</html>
