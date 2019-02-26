@@ -8,7 +8,7 @@ h1 {
   }
 
 header {
-   position: top-left;
+   position: top;
    border: solid black;
    border-width: auto;
    max-width: 83em;
@@ -48,7 +48,7 @@ a:active {
 #content {
     position: left;
     float: left;
-    height: 70em;
+    height: 29em;
     width: 40em;
     border-style: solid;
     margin: 0.5em;
@@ -63,47 +63,25 @@ article {
     margin: 0.5em;
 }
 
-#programtext {
-    width: 20em;
+table {
+    float: left;
+    margin: 0.9em;
+    table-layout: fixed;
 }
 
-#sulogga{
-    float:right;
-    width:15em;
-
-}
-
-#jobbtext{
-    clear: both;
-}
-
-#djurrättstext{
-    width: 20em;
-    padding-right: 2em;
-    padding-bottom: 13em;
-}
-
-#nonugget{
-    float: right;
-    width:15em;
-    margin: 0px 0px 0px 0px;
-}
+td, th {
+    border: solid 1px black;
+} 
 
 aside {
-    position: right;
     float: right;
-    width: 37em;
-    height: 70em;
+    width: 32em;
+    height: 29em;
     border: solid black;
     padding: 0.7em;
     margin: 0.5em;
     z-index: 3;
     font: 15px arial, sans-serif;
-}
-
-dd {
-    display:list-item;
-    list-style-type: disc;
 }
 
  footer {

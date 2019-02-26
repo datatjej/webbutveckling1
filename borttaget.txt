@@ -1,20 +1,12 @@
-webbutv
- <figure>
-                    <img alt="bild på arktis" src="telugu.jpg" width="150" height="200">
-                    <img alt="bild på arktis" src="kahaani.jpg" width="150" height="200">
-                    <img alt="bild på arktis" src="iyer.jpg" width="150" height="200">
-                    <img alt="bild på arktis" src="aranyer.jpg" width="150" height="200">
-                    <figcaption>Nuvvostanante Nenoddantana (2005), Kahaani (2012), Mr and Mrs Iyer (2002)  och Aranyer din ratri (1970).</figcaption>
-            </figure>
 
-z-index: The z-index property specifies the stack order of an element. An element with greater stack order is always in front of an element with a lower stack order. OBS: måste användas i kombination av en fixed/absolute/relative position. 
 
-img {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  z-index: -1;
+
+#profilbild {
+    width: 10em;
+    height: 14em;
+    clip-path: circle(70px at 75px 80px);
+    float: right;
+    position: relative;
+    top: -20px; 
 }
-
-float/clear:  the float property is used for positioning and formatting content e.g. let an image float left to the text in a container (left, right, none, inherit). In its simplest use, the float property can be used to wrap text around images. The clear property specifies what elements can float beside the cleared element and on which side.
 

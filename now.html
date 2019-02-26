@@ -7,11 +7,13 @@
     <meta name="generator" content="Visual Studio Code">
     <meta name="keywords" content="HTML, CSS, XML, JavaScript, PHP, webbutveckling">
     <meta name="robots" content="noimageindex">
+    <link rel="stylesheet" href="now.css">
     <title>Now</title>
 </head>
 <body>
  <div id="page">
         <header>
+            <h1>Just nu</h1>
             <nav>
                 <a href="home.html">Hem</a> <br>
                 <a href="history.html">Då</a> <br>
@@ -24,16 +26,17 @@
     <div id="content">
         <article>
             <h2>Studier</h2>
-            <p>Sedan hösten 2016 läser jag ekononomi och IT-programmet vid SU och det har varit ett ögonöppnande program för möjligheterna 
+            <figure id="sulogga">
+                    <img alt="SU:s logga" src="su.svg" width="200" height="196">
+                    <figcaption><pre>SU:s logga i SVG-format.</pre></figcaption>
+            </figure>
+            <p id="programtext">Sedan hösten 2016 läser jag ekononomi och IT-programmet vid SU och det har varit ett ögonöppnande program för möjligheterna 
             inom bägge fälten. Men IT-delen har varit mest intressant (särskilt informationssäkerhet och programmering), och därför skriver 
             jag under våren 2019 min kandidatuppsats på DSV.</p>
-
-            <figure>
-                <img alt="SU:s logga" src="su.svg" width="200" height="196">
-                <figcaption>SU:s logga i SVG-format med transparent bakgrund.</figcaption>
-            </figure>
+            <br><br><br><br>
+         
         </article>
-        <article>
+        <article id="jobbtext">
             <h2>Jobb</h2>
             <p>Sedan augusti 2018 arbetar jag deltid på Telias ekonomiavdelning som en del av en studentpool. Det känns fantastiskt kul att för första
             gången ha ett någorlunda kvalificerat jobb, även om arbetsuppgifterna i sig inte kräver några djupare ekonomikunskaper. Jag trivs med att
@@ -41,18 +44,15 @@
         </article>
         <article>
             <h2>Djurrätt</h2>
-            <p>Som livslång vegetarian och vegan sedan 10 år tillbaka har djurrätt på sätt och vis alltid varit en del av mitt liv. Men det är
+            <figure id="nonugget">
+                <img alt="I'm not a nugget" src="kyckling.jpg" width="200" height="300"><br>
+                <figcaption><pre>"I am not 
+a nugget!"</pre>
+                </figcaption>
+            </figure>
+            <p id="djurrättstext">Som livslång vegetarian och vegan sedan 10 år tillbaka har djurrätt på sätt och vis alltid varit en del av mitt liv. Men det är
             först de senaste åren som jag börjat engagera mig mer utöver kosten och numera sitter i styrelsen för Stockholmsavdelningen av Djurens Rätt.
             Vi anordnar återkommmande medlemsmöten och flygbladsbladsutdelningar och försöker bjuda in intressanta föreläsare så ofta som möjligt.</p>
-            <figure>
-                    <img alt="I'm not a nugget" src="kyckling.jpg" width="200" height="300"><br>
-                        <figcaption><pre>Affisch i fönstret på Djurens Rätts kontor vid Hornstull:
-                                    "I am not 
-                                    a nugget!"</pre>
-                        </figcaption>
-                </figure>
-
-                <img alt="Minkaela-animation" src="minkaela.aml" width="200" height="300"><br>
         </article>
     </div>
 

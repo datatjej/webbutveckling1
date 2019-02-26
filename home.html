@@ -27,19 +27,19 @@
     <div id="content">
         <article>
             <h2>Kort om mig</h2>
-                <div>Jag heter Tova och är en tidigare språkstudent som just nu går sista terminen på ekonomi och IT-programemt vid Stockholms universitet. 
-                    När jag inte pluggar jobbar jag deltid som ekonomiassistent och engagerar mig i djurrätt.</div>
-                <figure>
-                    <img alt="Bild på mig" src="hembild.jpg" width="230" height="300">
-                        <figcaption>Bild: privat.</figcaption>
+            <figure id="profilbild">
+                    <img id="profilbild" alt="Bild på mig" src="hembild.jpg">
+                        <figcaption><pre>Bild: privat.</pre></figcaption>
                 </figure>
+            <div id="ommigtext">Jag heter Tova och är en tidigare språkstudent som just nu går sista terminen på ekonomi och IT-programemt vid Stockholms universitet. 
+            När jag inte pluggar jobbar jag deltid som ekonomiassistent och engagerar mig i djurrätt.</div>
         </article>
-        <article>
+        <article id="hittarunt">
             <h2>Hitta runt</h2>
-            <div>I länklistan högst upp finns länkar till andra delar av sidan.</div>
+            <div>I länklistan högst upp finns länkar till andra delar av sidan. <img id="uppåtpil" alt="uppåtpil" src="upward-arrow.png"></div>
             <figure>
-                    <img alt="Progressiv jpg-bild" src="tree.jpg" width="400" height="320">
-                        <figcaption>Progressiv JPG-bild (privat).</figcaption>
+                    <img id="progressivjpg" alt="Progressiv jpg-bild" src="tree.jpg">
+                        <figcaption><pre>Progressiv JPG-bild (privat).</pre></figcaption>
                 </figure>
         </article>
     </div>
@@ -59,7 +59,7 @@
                 <input type="url" name="hemsida" placeholder="www.minhemsida.se">
                 <br><br>
                 Meddelande:<br>
-                <textarea rows="4" cols="50" placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit."></textarea>
+                <textarea id="meddelanderuta" rows="4" cols="50" placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit."></textarea>
                 <br><br>
                 Vad avser meddelandet?<br>
                 <input type="checkbox" name="feedback">Feedback.<br>
@@ -107,6 +107,7 @@
                 Kontaktuppgifter:
             </summary>
             <p>Epost: <a href="mailto:tova.erben@gmail.com">tova.erben@gmail.com</a></p>
+            <div id="telnummer">Tel: 070 722 58 10</div>
         </details>
         
     </footer>

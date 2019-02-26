@@ -2,6 +2,12 @@
     margin: 2em 1em 1em 2em
 }
 
+h1 {
+    letter-spacing: 0.2em;
+    color: rgba(133,0,0,0.6);
+  }
+
+
 header {
    position: top;
    border: solid black;
@@ -20,17 +26,36 @@ header {
 nav {
 
     border: dotted black;
+    font-family: arial;
  }
 
+ a:link {
+    color: darkblue;
+  }
+  
+a:visited {
+    color: darkslategray;
+  }
+  
+a:hover {
+    color: black;
+    cursor:grab;
+  }
+  
+a:active {
+    color: gray;
+  } 
+ 
 #content {
     position: left;
     float: left;
-    height: 100em;
+    height: 63em;
     width: 40em;
     border-style: solid;
     margin: 0.5em;
     padding: 0.7em;
     z-index: 2;
+    font: 15px arial, sans-serif;
 }
 
 article {
@@ -39,29 +64,53 @@ article {
     margin: 0.5em;
 }
 
-table {
-    position: right;
-    float: right;
+#filmtext {
+    width: 25em;
 }
+
+#animation{
+    float:right;
+    width:10em;
+}
+
+ul {
+   list-style: circle;
+}
+
+ol {
+    list-style: georgian;
+ }
+
+table {
+    float: left;
+    margin: 2em;
+    table-layout: fixed;
+}
+
+td, th {
+    border: solid 1px black;
+} 
 
 aside {
     float: right;
-    width: 30em;
-    height: 100em;
+    width: 36em;
+    height: 63em;
     border: solid black;
     padding: 0.7em;
     margin: 0.5em;
     z-index: 3;
+    font: 15px arial, sans-serif;
 }
 
  footer {
     display: table;
     clear: both;
-    width: 83em;
+    width: 75em;
     position: bottom;
     border-color: black;
     border-style: solid;
     padding: 0.7em;
     margin: 0.5em;
     z-index: 4;
+    font-family: arial;
 }
