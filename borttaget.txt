@@ -1,12 +1,4 @@
-
-
-
-#profilbild {
-    width: 10em;
-    height: 14em;
-    clip-path: circle(70px at 75px 80px);
-    float: right;
-    position: relative;
-    top: -20px; 
-}
+s. 4: Das Korpus 
+s. 4. varför blåmarkerat? 
+s. 13 är det okej att behålla det kursivt under Phänomene? 
 

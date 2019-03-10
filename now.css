@@ -1,3 +1,7 @@
+body {
+    background: #fff0b3;
+}
+
 #page {
     margin: 2em 1em 1em 2em
 }
@@ -20,6 +24,7 @@ header {
    z-index: 1;
    outline-style: double;
    outline-color: yellowgreen;
+   background: linear-gradient(to bottom, white, rgb(255, 204, 153));
 }
 
 nav {
@@ -55,6 +60,7 @@ a:active {
     padding: 0.7em;
     z-index: 2;
     font: 15px arial, sans-serif;
+    background: white;
 }
 
 article {
@@ -99,6 +105,7 @@ aside {
     margin: 0.5em;
     z-index: 3;
     font: 15px arial, sans-serif;
+    background: white;
 }
 
 dd {
@@ -117,4 +124,5 @@ dd {
     margin: 0.5em;
     z-index: 4;
     font-family: arial;
+    background: rgb(255, 204, 153)
 }
