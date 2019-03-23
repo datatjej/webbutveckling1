@@ -6,6 +6,7 @@
     <meta name="description" content="Beskriver ens nuvarande aktiviteter och intressen">
     <meta name="generator" content="Visual Studio Code">
     <meta name="keywords" content="HTML, CSS, XML, JavaScript, PHP, webbutveckling">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noimageindex">
     <link rel="stylesheet" href="now.css">
     <title>Now</title>
@@ -21,13 +22,12 @@
                 <a href="future.html">Framtiden</a> <br>
             </nav>
         </header>
-    </div>
 
     <div id="content">
         <article>
             <h2>Studier</h2>
             <figure id="sulogga">
-                    <img alt="SU:s logga" src="su.svg" width="200" height="196">
+                    <img alt="SU:s logga" src="su.svg">
                     <figcaption><pre>SU:s logga i SVG-format.</pre></figcaption>
             </figure>
             <p id="programtext">Sedan hösten 2016 läser jag ekononomi och IT-programmet vid SU och det har varit ett ögonöppnande program för möjligheterna 
@@ -45,7 +45,7 @@
         <article>
             <h2>Djurrätt</h2>
             <figure id="nonugget">
-                <img alt="I'm not a nugget" src="kyckling.jpg" width="200" height="300"><br>
+                <img id="kyckling" alt="I'm not a nugget" src="kyckling.jpg"><br>
                 <figcaption><pre>"I am not 
 a nugget!"</pre>
                 </figcaption>
@@ -64,16 +64,14 @@ a nugget!"</pre>
             <dd>avstår allt som kommer från djurriket.</dd>
         </dl>             
     </aside>
-
-    <footer>
-        <details>
-            <summary>
-                Kontaktuppgifter:
-            </summary>
-            <p>Epost: <a href="mailto:tova.erben@gmail.com">tova.erben@gmail.com</a></p>
-        </details>
-        
-    </footer>        
-    
+        <footer>
+            <details>
+                <summary>
+                    Kontaktuppgifter:
+                </summary>
+                <p>Epost: <a href="mailto:tova.erben@gmail.com">tova.erben@gmail.com</a></p>
+            </details>
+        </footer>        
+    </div>    
 </body>
 </html>

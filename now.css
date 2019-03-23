@@ -1,5 +1,10 @@
+* {
+    box-sizing: border-box;
+  }
+
 body {
     background: #fff0b3;
+    min-width: 10em;
 }
 
 #page {
@@ -12,7 +17,6 @@ h1 {
   }
 
 header {
-   position: top-left;
    border: solid black;
    border-width: auto;
    max-width: 83em;
@@ -76,7 +80,7 @@ article {
 #sulogga{
     float:right;
     width:15em;
-
+    height: 15em;
 }
 
 #jobbtext{
@@ -86,7 +90,12 @@ article {
 #djurrättstext{
     width: 20em;
     padding-right: 2em;
-    padding-bottom: 13em;
+    padding-bottom: 8em;
+}
+
+#kyckling {
+    width: 13em;
+    height: 18em;
 }
 
 #nonugget{
@@ -96,8 +105,7 @@ article {
 }
 
 aside {
-    position: right;
-    float: right;
+    float: left;
     width: 37em;
     height: 70em;
     border: solid black;
@@ -126,3 +134,14 @@ dd {
     font-family: arial;
     background: rgb(255, 204, 153)
 }
+
+@media print {
+    header, #content, body, aside, footer {
+        background: transparent;
+    }
+    img {
+    filter: grayscale(100%);
+    }
+    h1 {
+        color: black;
+    }

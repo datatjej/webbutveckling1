@@ -1,10 +1,14 @@
+* {
+    box-sizing: border-box;
+  }
+
 body {
     background: #fff0b3;
+    min-width:20em;
 }
 
-
 #page {
-    margin: 2em 1em 1em 2em
+    margin: 2em 1em 1em 2em;
 }
 
 h1 {
@@ -13,23 +17,24 @@ h1 {
   }
 
 header {
-   position: top-left;
-   border: solid black;
-   border-width: auto;
-   max-width: 83em;
-   max-height: 50em;
-   min-width: 10em;
-   min-height: 5em;  
-   margin: 0.1em;
-   padding: 0.7em;
-   z-index: 1;
-   outline-style: double;
-   outline-color: yellowgreen;
-   background: linear-gradient(to bottom, white, rgb(255, 204, 153)); 
+    border: solid black;
+    border-width: auto;
+    max-width: 83em;
+    max-height: 50em;
+    min-width: 10em;
+    min-height: 5em;  
+    margin: 0.4em;
+    padding: 0.7em;
+    z-index: 1;
+    outline-style: double;
+    outline-color: yellowgreen;
+    background: linear-gradient(to bottom, white, rgb(255, 204, 153));
 }
 
 nav {
-
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.5em;
     border: dotted black;
     font-family: arial;
  }
@@ -52,41 +57,41 @@ a:active {
   } 
 
 #content {
-    position: left;
-    float: left;
-    height: 55em;
-    width: 36em;
-    border-style: solid;
-    margin: 0.5em;
-    padding: 0.7em;
+    float:left;
+    width:45em;
+    border: solid black;
+    min-width: 10em;
+    height: 60em;
+    margin-right: 1em;
     z-index: 2;
     font: 15px arial, sans-serif;
     background: white;
+    margin-bottom: 1em;
 }
 
 article{
     border: dotted black;
-    padding: 0.7em;
-    margin: 0.5em;
-    float: left;
-}
-
-#ommigtext{
-    width: 15em;
-    float:left;
+    padding: 1em;
     margin: 1em;
 }
 
-
-#profilbild {
+#profilfigur {
     position: relative;
-    top: -2em; 
+    float: right;
+    top: -3.5em;
+}
+
+#profil {
     width: 10em;
     height: 14em;
-    clip-path: circle(75px at 75px 80px);
-   
-    float: right;
+    clip-path: circle(41%);
+    
 }
+
+#ommig{
+    padding-bottom: 4em;
+}
+
 
 #hittarunt{
     clear: both;
@@ -106,16 +111,15 @@ article{
 }
 
 aside {
-    position: right;
-    float:right;
-    width: 40em;
-    height: 55em;
+    float: left;
+    width:31em;
+    height: 56em;
+    padding: 0.5em;
     border: solid black;
-    padding: 0.7em;
-    margin: 0.5em;
     z-index: 3;
-    font: 15px arial, sans-serif;
+    font: 1em arial, sans-serif;
     background: white;
+    margin-bottom: 1em;
 }
 
 input:focus {
@@ -124,14 +128,11 @@ input:focus {
 
 
  footer {
-    display: table;
     clear: both;
-    width: 80em;
-    position: bottom;
+    height: 4em;
+    width: auto;
     border-color: black;
     border-style: solid;
-    padding: 0.7em;
-    margin: 0.5em;
     z-index: 4;
     font: 15px arial;
     background: rgb(255, 204, 153)
@@ -142,12 +143,42 @@ input:focus {
 }
 
 #meddelanderuta {
+    resize: none;
     overflow: scroll;
+    border: 2px solid lightsalmon;
+}
+
+input[type='text'] { 
+    background-image: url('person.png');
+    background-repeat: no-repeat; 
+    background-position: top -0.3em left -0.3em;
+    background-size: 2em;
+    text-indent:2.5em;
 }
 
 input[type='email'] { 
-background-image: url('../img/search.png'); email.png;
-background-position: 9px 20px;
-background-repeat: no-repeat;
-text-align: center;
+    background-image: url('at.png');
+    background-repeat: no-repeat; 
+    background-position: top -0.3em left -0.3em;
+    background-size: 2em;
+    text-indent:2.5em;
 }
+
+input { 
+    border: 2px solid lightsalmon;
+}
+
+select { 
+    border: 2px solid lightsalmon;
+}
+
+@media print {
+    header, #content, body, aside, footer {
+        background: transparent;
+    }
+    img {
+    filter: grayscale(100%);
+    }
+    h1 {
+        color: black;
+    }

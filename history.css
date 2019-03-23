@@ -1,9 +1,15 @@
+* {
+    box-sizing: border-box;
+  }
+
+
 body {
     background: #fff0b3;
+    min-width:10em;
 }
 
 #page {
-    margin: 2em 1em 1em 2em
+    margin: 2em 1em 1em 2em;
 }
 
 h1 {
@@ -54,19 +60,19 @@ a:active {
 #content {
     position: left;
     float: left;
-    height: 63em;
+    height: 65em;
     width: 40em;
     border-style: solid;
     margin: 0.5em;
     padding: 0.7em;
     z-index: 2;
-    font: 15px arial, sans-serif;
+    font: 1em arial, sans-serif;
     background: white;
 }
 
 article {
     border: dotted black;
-    padding: 0.7em;
+    padding: 0.5em;
     margin: 0.5em;
 }
 
@@ -89,7 +95,7 @@ ol {
 
 table {
     float: left;
-    margin: 2em;
+    margin: 0.5em;
     table-layout: fixed;
 }
 
@@ -98,9 +104,9 @@ td, th {
 } 
 
 aside {
-    float: right;
-    width: 36em;
-    height: 63em;
+    float: left;
+    width: 35em;
+    height: 69.3em;
     border: solid black;
     padding: 0.7em;
     margin: 0.5em;
@@ -113,7 +119,6 @@ aside {
     display: table;
     clear: both;
     width: 75em;
-    position: bottom;
     border-color: black;
     border-style: solid;
     padding: 0.7em;
@@ -122,3 +127,14 @@ aside {
     font-family: arial;
     background: rgb(255, 204, 153)
 }
+
+@media print {
+    header, #content, body, aside, footer {
+        background: transparent;
+    }
+    img {
+    filter: grayscale(100%);
+    }
+    h1 {
+        color: black;
+    }
