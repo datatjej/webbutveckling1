@@ -1,4 +1,4 @@
-* {
+  * {
     box-sizing: border-box;
   }
 
@@ -85,7 +85,12 @@ article{
     width: 10em;
     height: 14em;
     clip-path: circle(41%);
-    
+    transition: 1s;
+}
+
+#profil:hover {
+    clip-path: circle(100%);
+    transform: rotate(10deg);
 }
 
 #ommig{
